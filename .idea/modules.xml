@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Anroid-Study.iml" filepath="$PROJECT_DIR$/Anroid-Study.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app.i18n/app.i18n.iml" filepath="$PROJECT_DIR$/app.i18n/app.i18n.iml" />
+    </modules>
+  </component>
+</project>
