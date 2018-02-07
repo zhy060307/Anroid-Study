@@ -1,1 +1,1 @@
-include ':app.i18n', ':app.serialport'
+include ':app.i18n', ':app.serialport', ':app.rxjava'

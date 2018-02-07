@@ -1,0 +1,62 @@
+ext {
+    libs = [
+            main      : [
+                    support : [
+                            "com.android.support:appcompat-v7:${versions.android.sdkSupport}",
+                            "com.android.support:recyclerview-v7:${versions.android.sdkSupport}",
+                            "com.android.support:support-v4:${versions.android.sdkSupport}",
+                            "com.android.support:multidex:${versions.multidex}",
+                            "com.annimon:stream:${versions.steam}",
+                            "com.google.guava:guava:${versions.guava}",
+                            "com.facebook.stetho:stetho:${versions.stetho}",
+                            "com.jakewharton.threetenabp:threetenabp:${versions.threetenabp}"
+                    ],
+                    kotlin  : [
+                            "org.jetbrains.kotlin:kotlin-stdlib-jre7:${versions.kotlin}",
+                            "org.jetbrains.kotlin:kotlin-stdlib-jre8:${versions.kotlin}",
+                            "org.jetbrains.kotlin:kotlin-reflect:${versions.kotlin}"
+                    ],
+                    dagger  : [
+                            "com.google.dagger:dagger:${versions.dagger}",
+                            "com.google.dagger:dagger-android:${versions.dagger}",
+                            "com.google.dagger:dagger-android-support:${versions.dagger}"
+
+                    ],
+                    dbflow  : [
+                            "com.github.Raizlabs.DBFlow:dbflow-core:${versions.dbflow}",
+                            "com.github.Raizlabs.DBFlow:dbflow:${versions.dbflow}"
+
+                    ],
+                    rx      : [
+                            "io.reactivex:rxandroid:${versions.rxandroid}",
+                            "io.reactivex:rxjava:${versions.rxJava}",
+                    ],
+                    rx2     : [
+                            "io.reactivex.rxjava2:rxjava:${versions.rxJava2}",
+                            "io.reactivex.rxjava2:rxandroid:${versions.rxAndroid2}"
+                    ],
+                    retrofit: [
+                            "com.squareup.retrofit2:retrofit:${versions.retrofit2}",
+                            "com.squareup.retrofit2:converter-jackson:${versions.retrofit2}",
+                            "com.squareup.retrofit2:adapter-rxjava:${versions.retrofit2}",
+                            "com.squareup.okhttp3:logging-interceptor:${versions.loggingInterceptor}"
+                    ],
+
+            ],
+            annotation: [
+                    butterKnife: [
+                            "com.jakewharton:butterknife-compiler:${versions.butterKnife}"
+                    ],
+                    dbflow     : [
+                            "com.github.Raizlabs.DBFlow:dbflow-processor:${versions.dbflow}"
+                    ],
+                    dagger     : [
+                            "com.google.dagger:dagger-compiler:${versions.dagger}",
+                            "com.google.dagger:dagger-android-processor:${versions.dagger}"
+                    ],
+            ],
+
+
+    ]
+}
+
