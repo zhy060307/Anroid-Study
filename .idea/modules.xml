@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Anroid-Study.iml" filepath="$PROJECT_DIR$/Anroid-Study.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app.activity/app.activity.iml" filepath="$PROJECT_DIR$/app.activity/app.activity.iml" />
       <module fileurl="file://$PROJECT_DIR$/app.i18n/app.i18n.iml" filepath="$PROJECT_DIR$/app.i18n/app.i18n.iml" />
       <module fileurl="file://$PROJECT_DIR$/app.rxjava/app.rxjava.iml" filepath="$PROJECT_DIR$/app.rxjava/app.rxjava.iml" />
       <module fileurl="file://$PROJECT_DIR$/app.serialport/app.serialport.iml" filepath="$PROJECT_DIR$/app.serialport/app.serialport.iml" />

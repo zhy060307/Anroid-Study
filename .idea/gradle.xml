@@ -8,6 +8,7 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/app.activity" />
             <option value="$PROJECT_DIR$/app.i18n" />
             <option value="$PROJECT_DIR$/app.rxjava" />
             <option value="$PROJECT_DIR$/app.serialport" />
