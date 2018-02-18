@@ -41,6 +41,11 @@ ext {
                             "com.squareup.retrofit2:adapter-rxjava:${versions.retrofit2}",
                             "com.squareup.okhttp3:logging-interceptor:${versions.loggingInterceptor}"
                     ],
+                    widgets:[
+                            colorPicker:[
+                                    "com.github.skydoves:colorpickerpreference:${versions.colorPicker}"
+                            ]
+                    ]
 
             ],
             annotation: [

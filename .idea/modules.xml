@@ -7,6 +7,7 @@
       <module fileurl="file://$PROJECT_DIR$/app.i18n/app.i18n.iml" filepath="$PROJECT_DIR$/app.i18n/app.i18n.iml" />
       <module fileurl="file://$PROJECT_DIR$/app.rxjava/app.rxjava.iml" filepath="$PROJECT_DIR$/app.rxjava/app.rxjava.iml" />
       <module fileurl="file://$PROJECT_DIR$/app.serialport/app.serialport.iml" filepath="$PROJECT_DIR$/app.serialport/app.serialport.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app.widget/app.widget.iml" filepath="$PROJECT_DIR$/app.widget/app.widget.iml" />
     </modules>
   </component>
 </project>
