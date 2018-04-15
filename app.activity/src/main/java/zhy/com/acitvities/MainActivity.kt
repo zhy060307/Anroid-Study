@@ -15,10 +15,14 @@ class MainActivity : AppCompatActivity() {
 
         val intent = Intent(this, Test1Activity::class.java)
         findViewById<Button>(R.id.btn1).setOnClickListener {
-
             startActivity(intent)
-            finish()
         }
+        Log.d(TAG, " OnCreate ")
+    }
+
+    override fun onRestart() {
+        super.onRestart()
+        Log.d(TAG, " onReStart ")
     }
 
     override fun onStart() {

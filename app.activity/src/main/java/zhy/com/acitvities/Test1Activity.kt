@@ -11,9 +11,19 @@ class Test1Activity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_test1)
-
+        Log.d(TAG, " onCreate ")
     }
 
+
+    override fun onRestart() {
+        super.onRestart()
+        Log.d(TAG, " onReStart ")
+    }
+
+    override fun onStart() {
+        super.onStart()
+        Log.d(TAG, " onStart ")
+    }
 
     override fun onResume() {
         super.onResume()

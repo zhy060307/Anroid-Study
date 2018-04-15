@@ -1,1 +1,1 @@
-include ':app.i18n', ':app.serialport', ':app.rxjava', ':app.activity', ':app.widget', ':app.constraintlayout'
+include ':app.i18n', ':app.serialport', ':app.rxjava', ':app.activity', ':app.widget', ':app.constraintlayout', ':app.annotation'
