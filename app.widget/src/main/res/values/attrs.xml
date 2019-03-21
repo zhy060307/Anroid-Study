@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="topImageSrc" format="reference" />
+    <declare-styleable name="CornerImageLayout">
+        <attr name="cornerLocation">
+            <enum name="topLeft" value="1" />
+            <enum name="topRight" value="2" />
+            <enum name="bottomRight" value="3" />
+            <enum name="bottomLeft" value="4" />
+        </attr>
+    </declare-styleable>
+</resources>

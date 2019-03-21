@@ -12,9 +12,12 @@
             <option value="$PROJECT_DIR$/app.annotation" />
             <option value="$PROJECT_DIR$/app.constraintlayout" />
             <option value="$PROJECT_DIR$/app.i18n" />
+            <option value="$PROJECT_DIR$/app.recyclerview" />
             <option value="$PROJECT_DIR$/app.rxjava" />
             <option value="$PROJECT_DIR$/app.serialport" />
             <option value="$PROJECT_DIR$/app.widget" />
+            <option value="$PROJECT_DIR$/dynamicCardLayoutmaster" />
+            <option value="$PROJECT_DIR$/rxjava2" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

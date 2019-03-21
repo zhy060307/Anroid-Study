@@ -7,9 +7,12 @@
       <module fileurl="file://$PROJECT_DIR$/app.annotation/app.annotation.iml" filepath="$PROJECT_DIR$/app.annotation/app.annotation.iml" />
       <module fileurl="file://$PROJECT_DIR$/app.constraintlayout/app.constraintlayout.iml" filepath="$PROJECT_DIR$/app.constraintlayout/app.constraintlayout.iml" />
       <module fileurl="file://$PROJECT_DIR$/app.i18n/app.i18n.iml" filepath="$PROJECT_DIR$/app.i18n/app.i18n.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app.recyclerview/app.recyclerview.iml" filepath="$PROJECT_DIR$/app.recyclerview/app.recyclerview.iml" />
       <module fileurl="file://$PROJECT_DIR$/app.rxjava/app.rxjava.iml" filepath="$PROJECT_DIR$/app.rxjava/app.rxjava.iml" />
       <module fileurl="file://$PROJECT_DIR$/app.serialport/app.serialport.iml" filepath="$PROJECT_DIR$/app.serialport/app.serialport.iml" />
       <module fileurl="file://$PROJECT_DIR$/app.widget/app.widget.iml" filepath="$PROJECT_DIR$/app.widget/app.widget.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dynamicCardLayoutmaster/dynamicCardLayoutmaster.iml" filepath="$PROJECT_DIR$/dynamicCardLayoutmaster/dynamicCardLayoutmaster.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rxjava2/rxjava2.iml" filepath="$PROJECT_DIR$/rxjava2/rxjava2.iml" />
     </modules>
   </component>
 </project>

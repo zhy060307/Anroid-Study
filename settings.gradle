@@ -1,1 +1,2 @@
-include ':app.i18n', ':app.serialport', ':app.rxjava', ':app.activity', ':app.widget', ':app.constraintlayout', ':app.annotation'
+include ':app.i18n', ':app.serialport', ':app.rxjava', ':app.activity', ':app.widget', ':app.constraintlayout', ':app.annotation', ':app.recyclerview', ':rxjava2'
+include ':dynamicCardLayoutmaster'

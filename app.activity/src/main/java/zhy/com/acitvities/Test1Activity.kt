@@ -1,48 +1,55 @@
 package zhy.com.acitvities
 
 import android.os.Bundle
+import android.os.Handler
+import android.os.Message
 import android.support.v7.app.AppCompatActivity
-import android.util.Log
+import android.widget.TextView
+import java.io.DataInputStream
+import java.net.ServerSocket
+import java.net.Socket
 
 class Test1Activity : AppCompatActivity() {
 
-    private val TAG = Test1Activity::class.java.simpleName
-
+    lateinit var textView: TextView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_test1)
-        Log.d(TAG, " onCreate ")
+        textView = findViewById(R.id.textView)
+//        serverThread.start()
     }
 
+    private val handler = object : Handler() {
+        override fun handleMessage(msg: Message) {
+            when (msg.what) {
+                0 -> {
+                    textView.text = msg.obj.toString()
 
-    override fun onRestart() {
-        super.onRestart()
-        Log.d(TAG, " onReStart ")
+                }
+            }
+        }
     }
 
-    override fun onStart() {
-        super.onStart()
-        Log.d(TAG, " onStart ")
-    }
+    private val serverThread = object : Thread() {
+        override fun run() {
+            val serverSocket = ServerSocket(9000)
+            var socket: Socket? = null
+            while (true) {
+                try {
+                    socket = serverSocket.accept()
+                    val text = DataInputStream(socket.getInputStream()).read()
+                    val msg = handler.obtainMessage()
+                    msg.what = 0
+                    msg.obj = text
+                    handler.handleMessage(msg)
 
-    override fun onResume() {
-        super.onResume()
-        Log.d(TAG, " onResume ")
-    }
+                } catch (e: Exception) {
+                } finally {
+                    socket?.close()
+                }
 
-    override fun onPause() {
-        super.onPause()
 
-        Log.d(TAG, " onPause ")
-    }
-
-    override fun onStop() {
-        super.onStop()
-        Log.d(TAG, " onStop ")
-    }
-
-    override fun onDestroy() {
-        super.onDestroy()
-        Log.d(TAG, " onDestroy ")
+            }
+        }
     }
 }

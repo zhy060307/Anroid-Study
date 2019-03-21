@@ -6,7 +6,9 @@ import java.util.concurrent.TimeUnit;
 
 import rx.Observable;
 import rx.Observer;
+import rx.Single;
 import rx.functions.Action1;
+import rx.schedulers.Schedulers;
 import rx.subjects.PublishSubject;
 import rx.subjects.Subject;
 
@@ -68,5 +70,9 @@ public class OpTest {
                     }
                 });
 
+    }
+
+    private void log(Object msg) {
+        System.out.println(Thread.currentThread().getName() + " " + msg.toString());
     }
 }

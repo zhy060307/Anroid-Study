@@ -9,8 +9,10 @@ import java.util.concurrent.TimeUnit;
 
 import rx.Observable;
 import rx.Observer;
+import rx.Single;
 import rx.android.schedulers.AndroidSchedulers;
 import rx.functions.Action1;
+import rx.schedulers.Schedulers;
 import rx.subjects.PublishSubject;
 import rx.subjects.Subject;
 import zhy.com.rxjava.bus.RxBus;
@@ -75,10 +77,14 @@ public class MainActivity extends AppCompatActivity {
         );
 
 
+        findViewById(R.id.btn_scheduler).setOnClickListener(e -> {
+            scheduler1();
+        });
+
     }
 
     private void log(Object msg) {
-        Log.i("TAG", msg.toString());
+        Log.i("TAG", Thread.currentThread().getName() + " " + msg.toString());
     }
 
     public void window() {
@@ -135,6 +141,35 @@ public class MainActivity extends AppCompatActivity {
                 .take(20)
                 .window(3, TimeUnit.SECONDS)
                 .observeOn(AndroidSchedulers.mainThread());
+    }
+
+
+    private void scheduler1() {
+        Single.create((Single.OnSubscribe<Integer>) singleSubscriber -> {
+            for (int i = 0; i < 10; i++) {
+                log("send data " + i);
+                singleSubscriber.onSuccess(i);
+            }
+        }).subscribeOn(Schedulers.io())
+                .observeOn(AndroidSchedulers.mainThread())
+                .subscribe(new Observer<Integer>() {
+                    @Override
+                    public void onCompleted() {
+
+                    }
+
+                    @Override
+                    public void onError(Throwable e) {
+
+                    }
+
+                    @Override
+                    public void onNext(Integer integer) {
+                        log("receive data " + integer);
+                    }
+                })
+
+        ;
     }
 
 }
